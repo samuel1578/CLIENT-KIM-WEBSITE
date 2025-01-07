@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KimLuxurious - Luxury Candles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+        }
+        .hero {
+            background-image: url('https://example.com/hero-image.jpg'); /* Replace with your gallery image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">KimLuxurious</a>
+            <ul class="flex space-x-6 text-gray-600">
+                <li><a href="index.html" class="hover:text-gray-900">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-900">About</a></li>
+                <li><a href="blog.html" class="hover:text-gray-900">Blog</a></li>
+                <li><a href="products.html" class="hover:text-gray-900">Products</a></li>
+                <li><a href="admin.html" class="hover:text-gray-900">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero h-screen flex flex-col justify-center items-center text-center">
+        <h1 class="text-6xl font-bold">Welcome to KimLuxurious</h1>
+        <p class="text-xl mt-4">Experience the elegance of our luxury candles.</p>
+        <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Explore Now</button>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container mx-auto py-12">
+        <div class="text-center">
+            <h2 class="text-4xl font-semibold">Our Gallery</h2>
+            <p class="text-gray-600 mt-2">A glimpse into our exquisite collection.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <img src="https://example.com/gallery1.jpg" alt="Gallery Image 1" class="rounded-lg shadow-md">
+            <img src="https://example.com/gallery2.jpg" alt="Gallery Image 2" class="rounded-lg shadow-md">
+            <img src="https://example.com/gallery3.jpg" alt="Gallery Image 3" class="rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="container mx-auto py-12">
+        <div class="text-center">
+            <h2 class="text-4xl font-semibold">Featured Products</h2>
+            <p class="text-gray-600 mt-2">Browse some of our finest luxury candles.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://example.com/product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-lg font-bold mt-4">Product Name 1</h3>
+                <p class="text-gray-600 mt-2">$50.00</p>
+                <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Add to Cart</button>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://example.com/product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-lg font-bold mt-4">Product Name 2</h3>
+                <p class="text-gray-600 mt-2">$60.00</p>
+                <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Add to Cart</button>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://example.com/product3.jpg" alt="Product 3" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-lg font-bold mt-4">Product Name 3</h3>
+                <p class="text-gray-600 mt-2">$70.00</p>
+                <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold">What Our Customers Say</h2>
+            <p class="text-gray-600 mt-2">Hear from our satisfied customers.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <p class="italic">"The candles are absolutely divine. My house smells heavenly!"</p>
+                <p class="mt-4 font-bold">- Jane Doe</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <p class="italic">"These are the best luxury candles I've ever bought. Highly recommend!"</p>
+                <p class="mt-4 font-bold">- John Smith</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <p class="italic">"Elegant and long-lasting. Perfect for gifting."</p>
+                <p class="mt-4 font-bold">- Emily Johnson</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto grid md:grid-cols-2 gap-6 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-bold">Shop All Products</h2>
+                <p class="text-gray-600 mt-4">Discover our premium candles crafted with care and elegance.</p>
+                <a href="products.html" class="mt-6 inline-block px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Shop Now</a>
+            </div>
+            <img src="https://example.com/shop-preview.jpg" alt="Shop Preview" class="rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 KimLuxurious. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
