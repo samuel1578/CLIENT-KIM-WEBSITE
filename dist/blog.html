@@ -4,51 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Elysian Candle Bar</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #f8d7da; }
-        .navbar { background-color: #d63384; }
-        .footer { background-color: #d63384; color: white; }
+        body {
+            font-family: 'Georgia', serif;
+        }
+        .hero {
+            background-image: url('https://example.com/hero-image.jpg'); /* Replace with your gallery image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
     </style>
 </head>
-<body>
+<body class="bg-gray-100">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Elysian Candle Bar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    
-        <!-- Main Content -->
-        <div class="container mt-5">
-            <h1>Our Blog</h1>
-            <article>
-                <h2>How to Choose the Right Candle for Your Home</h2>
-                <p>Choosing the right candle can enhance your home’s ambiance. Here are some tips...</p>
-            </article>
-            <article>
-                <h2>The Benefits of Soy Candles</h2>
-                <p>Soy candles are eco-friendly and burn longer. Learn more about their benefits...</p>
-            </article>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Elysian Candle Bar</a>
+            <ul class="flex space-x-6 text-gray-600">
+                <li><a href="index.html" class="hover:text-gray-900">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-900">About</a></li>
+                <li><a href="blog.html" class="hover:text-gray-900">Blog</a></li>
+                <li><a href="services.html" class="hover:text-gray-900">Services</a></li>
+                <li><a href="contact.html" class="hover:text-gray-900">Contact</a></li>
+            </ul>
         </div>
-    
-        <!-- Footer -->
-        <footer class="footer text-center mt-5 p-3">
-            <p>&copy; 2023 Elysian Candle Bar</p>
-        </footer>
-    
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
-    </html>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero h-96 flex flex-col justify-center items-center text-center">
+        <h1 class="text-6xl font-bold">Welcome to Elysian Candle Bar</h1>
+        <p class="text-xl mt-4">Experience the elegance of our handcrafted candles.</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="container mx-auto py-12">
+        <div class="text-center">
+            <h2 class="text-4xl font-semibold">Our Blog</h2>
+            <p class="text-gray-600 mt-2">Discover the art of candle making and tips for enhancing your space.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <!-- Article 1 -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://via.placeholder.com/400x250" alt="Candle" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-lg font-bold mt-4">How to Choose the Right Candle for Your Home</h3>
+                <p class="text-gray-600 mt-2">Choosing the right candle can enhance your home’s ambiance. Here are some tips...</p>
+                <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Read More</button>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://via.placeholder.com/400x300" alt="Soy Candle" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-lg font-bold mt-4">The Benefits of Soy Candles</h3>
+                <p class="text-gray-600 mt-2">Soy candles are eco-friendly and burn longer. Learn more about their benefits...</p>
+                <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Read More</button>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://via.placeholder.com/400x200" alt="Candles at Night" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-lg font-bold mt-4">A Guide to Relaxing with Scented Candles</h3>
+                <p class="text-gray-600 mt-2">Scented candles are perfect for relaxation. Discover which scents work best...</p>
+                <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Read More</button>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://via.placeholder.com/400x350" alt="Candle Aromas" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-lg font-bold mt-4">The Power of Aromatherapy Candles</h3>
+                <p class="text-gray-600 mt-2">Aromatherapy candles can help with relaxation, sleep, and mood. Here's how...</p>
+                <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Read More</button>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://via.placeholder.com/400x300" alt="Candle in a Jar" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-lg font-bold mt-4">Why Choose Hand-Poured Candles?</h3>
+                <p class="text-gray-600 mt-2">Hand-poured candles offer superior quality and craftsmanship. Learn more...</p>
+                <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Read More</button>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <img src="https://via.placeholder.com/400x280" alt="Candles on Table" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-lg font-bold mt-4">Decorating Your Space with Candles</h3>
+                <p class="text-gray-600 mt-2">Candles can enhance the aesthetic of any room. Here are some decoration ideas...</p>
+                <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Elysian Candle Bar. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

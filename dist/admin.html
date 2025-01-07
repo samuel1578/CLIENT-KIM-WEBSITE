@@ -3,118 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Kim Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Admin Dashboard - Client Kim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Helvetica Neue', sans-serif;
-        }
-        .hero-section {
-            background-image: url('https://example.com/hero-image.jpg'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
+            font-family: 'Helvetica Neue', cursive, sans-serif;
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-100">
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Client Kim</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
-                </ul>
-            </div>
+    <nav class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Client Kim</a>
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="blog.html" class="hover:underline">Blog</a></li>
+                <li><a href="products.html" class="hover:underline">Products</a></li>
+                <li><a href="admin.html" class="hover:underline">Admin</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Content Section -->
-    <div class="container mt-4">
-        <h1 class="text-center">Welcome to Client Kim Website</h1>
-        <p class="text-center">Explore our products, learn more about us, and stay updated with our blog!</p>
-    </div>
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-80" style="background-image: url('hero-image.jpg');">
+        <div class="bg-black bg-opacity-50 text-white h-full flex justify-center items-center">
+            <h1 class="text-4xl font-bold">Welcome to the Admin Dashboard</h1>
+        </div>
+    </section>
 
-    <!-- Admin Page Content -->
-    <div class="container my-5">
-        <h2 class="text-center">Admin Dashboard</h2>
+    <!-- Content Section -->
+    <div class="container mx-auto mt-10">
+        <h2 class="text-3xl font-bold mb-6">Manage Your Site</h2>
 
         <!-- Product Management Section -->
-        <div class="my-4">
-            <h3>Product Management</h3>
-            <form class="mb-3">
-                <div class="mb-3">
-                    <label for="productName" class="form-label">Product Name</label>
-                    <input type="text" class="form-control" id="productName" placeholder="Enter product name">
+        <div class="bg-white p-6 rounded shadow mb-8">
+            <h3 class="text-2xl font-bold mb-4">Product Management</h3>
+            <form class="space-y-4">
+                <div>
+                    <label for="productName" class="block text-lg font-medium">Product Name</label>
+                    <input type="text" id="productName" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter product name">
                 </div>
-                <div class="mb-3">
-                    <label for="productPrice" class="form-label">Price</label>
-                    <input type="number" class="form-control" id="productPrice" placeholder="Enter price">
+                <div>
+                    <label for="productPrice" class="block text-lg font-medium">Price</label>
+                    <input type="number" id="productPrice" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter price">
                 </div>
-                <div class="mb-3">
-                    <label for="productDescription" class="form-label">Description</label>
-                    <textarea class="form-control" id="productDescription" rows="3" placeholder="Enter product description"></textarea>
+                <div>
+                    <label for="productDescription" class="block text-lg font-medium">Description</label>
+                    <textarea id="productDescription" class="w-full p-2 border border-gray-300 rounded" rows="3" placeholder="Enter product description"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Add Product</button>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add Product</button>
             </form>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Product Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Product Rows -->
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sample Product</td>
-                        <td>$10.00</td>
-                        <td>
-                            <button class="btn btn-sm btn-warning">Edit</button>
-                            <button class="btn btn-sm btn-danger">Remove</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
 
+    <!-- Admin Product Add Form -->
+    <section class="container mx-auto py-12">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Add New Product</h2>
+
+        <form action="/add-product" method="POST">
+            <div class="mb-4">
+                <label for="product-name" class="block text-gray-700">Product Name</label>
+                <input type="text" id="product-name" name="product-name" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="product-description" class="block text-gray-700">Product Description</label>
+                <textarea id="product-description" name="product-description" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md" rows="4" required></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="product-price" class="block text-gray-700">Product Price ($)</label>
+                <input type="number" id="product-price" name="product-price" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="product-image" class="block text-gray-700">Product Image URL</label>
+                <input type="text" id="product
+
         <!-- Promotions Section -->
-        <div class="my-4">
-            <h3>Promotions</h3>
-            <form class="mb-3">
-                <div class="mb-3">
-                    <label for="promotionName" class="form-label">Promotion Name</label>
-                    <input type="text" class="form-control" id="promotionName" placeholder="Enter promotion name">
+        <div class="bg-white p-6 rounded shadow mb-8">
+            <h3 class="text-2xl font-bold mb-4">Promotions</h3>
+            <form class="space-y-4">
+                <div>
+                    <label for="promotionName" class="block text-lg font-medium">Promotion Name</label>
+                    <input type="text" id="promotionName" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter promotion name">
                 </div>
-                <div class="mb-3">
-                    <label for="promotionDetails" class="form-label">Details</label>
-                    <textarea class="form-control" id="promotionDetails" rows="3" placeholder="Enter promotion details"></textarea>
+                <div>
+                    <label for="promotionDetails" class="block text-lg font-medium">Details</label>
+                    <textarea id="promotionDetails" class="w-full p-2 border border-gray-300 rounded" rows="3" placeholder="Enter promotion details"></textarea>
                 </div>
-                <button type="submit" class="btn btn-success">Add Promotion</button>
+                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Add Promotion</button>
             </form>
+        </div>
+
+        <!-- Analytics Section -->
+        <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-2xl font-bold mb-4">Website Analytics</h3>
+            <p class="text-lg">Track your website's performance:</p>
+            <ul class="list-disc pl-5 mt-3 space-y-2">
+                <li>Total Visitors: <span class="font-bold">1,245</span></li>
+                <li>Products Sold: <span class="font-bold">567</span></li>
+                <li>Active Promotions: <span class="font-bold">3</span></li>
+            </ul>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-light py-3">
-        <div class="container text-center">
-            <p>&copy; 2025 Client Kim. All rights reserved.</p>
-        </div>
+    <footer class="bg-blue-600 text-white text-center py-4 mt-10">
+        <p>&copy; 2025 New Vintage Luxury Candles. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

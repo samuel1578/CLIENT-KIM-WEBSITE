@@ -3,49 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Elysian Candle Bar</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Services - New Vintage Luxury Candles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #f8d7da; }
-        .navbar { background-color: #d63384; }
-        .footer { background-color: #d63384; color: white; }
+        body {
+            font-family: 'Georgia', serif;
+        }
     </style>
 </head>
-<body>
+<body class="bg-gray-100">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Elysian Candle Bar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">New Vintage Luxury Candles</a>
+            <ul class="flex space-x-6 text-gray-600">
+                <li><a href="index.html" class="hover:text-gray-900">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-900">About Us</a></li>
+                <li><a href="blog.html" class="hover:text-gray-900">Blog</a></li>
+                <li><a href="contact.html" class="hover:text-gray-900">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container mt-5">
-        <h1>Our Services</h1>
-        <ul>
-            <li>Custom Candle Design</li>
-            <li>Workshops and Classes</li>
-            <li>Corporate Gifting Solutions</li>
-        </ul>
-    </div>
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white text-center py-12">
+        <h1 class="text-4xl font-bold">Our Services</h1>
+        <p class="mt-4 text-xl">Explore the diverse and creative services we offer at Elysian Candle Bar.</p>
+    </section>
+
+    <!-- Service Features Section -->
+    <section class="container mx-auto py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service 1: Custom Candle Design -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex justify-center mb-4">
+                    <img src="https://example.com/custom-candle-icon.png" alt="Custom Candle Design" class="w-12 h-12">
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800">Custom Candle Design</h3>
+                <p class="text-gray-600 mt-4">Create your own personalized candles with our design services. Choose your preferred scent, color, and container to match your style.</p>
+                <button class="mt-6 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Learn More</button>
+            </div>
+
+            <!-- Service 2: Workshops and Classes -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex justify-center mb-4">
+                    <img src="https://example.com/workshop-icon.png" alt="Workshops" class="w-12 h-12">
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800">Workshops and Classes</h3>
+                <p class="text-gray-600 mt-4">Join our fun and interactive workshops to learn the art of candle making. Perfect for individuals and groups alike!</p>
+                <button class="mt-6 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Join a Workshop</button>
+            </div>
+
+            <!-- Service 3: Corporate Gifting Solutions -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex justify-center mb-4">
+                    <img src="https://example.com/corporate-icon.png" alt="Corporate Gifting" class="w-12 h-12">
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800">Corporate Gifting Solutions</h3>
+                <p class="text-gray-600 mt-4">Impress your clients and employees with our customized candle gifts. We offer bulk orders with personalized options.</p>
+                <button class="mt-6 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Explore Options</button>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer text-center mt-5 p-3">
-        <p>&copy; 2023 Elysian Candle Bar</p>
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 New Vintage Luxury Candles. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -4,58 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Elysian Candle Bar</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        body { background-color: #f8d7da; }
-        .navbar { background-color: #d63384; }
-        .footer { background-color: #d63384; color: white; }
+        body {
+            font-family: 'Georgia', serif;
+            background-image: url('https://example.com/background-image.jpg'); /* Replace with your own background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
     </style>
 </head>
-<body>
+<body class="bg-gray-50">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Elysian Candle Bar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">New Vintage Luxury Candles</a>
+            <ul class="flex space-x-6 text-gray-600">
+                <li><a href="index.html" class="hover:text-gray-900">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-900">About Us</a></li>
+                <li><a href="services.html" class="hover:text-gray-900">Services</a></li>
+                <li><a href="blog.html" class="hover:text-gray-900">Blog</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container mt-5">
-        <h1>Contact Us</h1>
-        <form>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" required>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-pink-500 to-purple-500 text-white text-center py-12">
+        <h1 class="text-4xl font-bold">Contact Us</h1>
+        <p class="mt-4 text-xl">We’d love to hear from you! Reach out for any questions or inquiries.</p>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="container mx-auto py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Get in Touch</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700">Your Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700">Your Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700">Your Message</label>
+                        <textarea id="message" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Send Message</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" required>
+
+            <!-- Contact Information -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Our Contact Info</h2>
+                <p class="text-gray-600"><strong>Address:</strong> 123 Candle Lane, Elysian City, CA</p>
+                <p class="text-gray-600 mt-2"><strong>Phone:</strong> (123) 456-7890</p>
+                <p class="text-gray-600 mt-2"><strong>Email:</strong> <a href="mailto:support@elysiancandlebar.com" class="text-gray-800 hover:text-gray-900">support@elysiancandlebar.com</a></p>
+                
+                <!-- Social Media Links with Handles -->
+                <div class="mt-6 text-gray-600">
+                    <p class="mb-2"><strong>Follow us:</strong></p>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.facebook.com/elysiancandlebar" class="text-blue-600 hover:underline" target="_blank"><i class="fab fa-facebook-f mr-2"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/elysiancandlebar" class="text-pink-600 hover:underline" target="_blank"><i class="fab fa-instagram mr-2"></i>Instagram</a></li>
+                        <li><a href="https://twitter.com/elysiancandlebar" class="text-blue-400 hover:underline" target="_blank"><i class="fab fa-twitter mr-2"></i>Twitter</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-    </div>
+        </div>
+    </section>
+
+    <!-- Optional Map Section -->
+    <section class="container mx-auto py-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Our Location</h2>
+            <div class="w-full h-72 bg-gray-300 rounded-lg"></div>
+            <!-- Embed a Google Map if desired -->
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer text-center mt-5 p-3">
-        <p>&copy; 2023 Elysian Candle Bar</p>
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 New Vintage Luxury Candles. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
