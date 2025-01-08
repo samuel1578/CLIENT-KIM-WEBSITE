@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Power of Aromatherapy Candles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+        }
+
+        /* Hero Section - Background Image Styling */
+        .hero {
+            background-image: url('https://images.pexels.com/photos/6724532/pexels-photo-6724532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for text contrast */
+        }
+
+        .hero-text {
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Article Images */
+        .article-image {
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1 class="text-4xl font-bold">The Power of Aromatherapy Candles</h1>
+            <p class="text-xl mt-4">Discover how aromatherapy candles can enhance your relaxation, mood, and overall well-being.</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="container mx-auto py-12">
+        <div class="text-center">
+            <h2 class="text-4xl font-semibold">Our Latest Blog Posts</h2>
+            <p class="text-gray-600 mt-2">Learn more about the benefits of candles and how they can improve your home and health.</p>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+
+            <!-- Article 1 -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <div class="article-image" style="background-image: url('https://images.pexels.com/photos/6755758/pexels-photo-6755758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');"></div>
+                <h3 class="text-lg font-bold mt-4">How to Choose the Right Candle for Your Home</h3>
+                <p class="text-gray-600 mt-2">Choosing the right candle can enhance your home’s ambiance. Here are some tips...</p>
+                <a href="blog1.html">
+                    <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Read More</button>
+                </a>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <div class="article-image" style="background-image: url('https://images.pexels.com/photos/6755758/pexels-photo-6755758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');"></div>
+                <h3 class="text-lg font-bold mt-4">The Benefits of Soy Candles</h3>
+                <p class="text-gray-600 mt-2">Soy candles are eco-friendly and burn longer. Learn more about their benefits...</p>
+                <a href="blog2.html">
+                    <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Read More</button>
+                </a>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <div class="article-image" style="background-image: url('https://images.pexels.com/photos/9898741/pexels-photo-9898741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');"></div>
+                <h3 class="text-lg font-bold mt-4">A Guide to Relaxing with Scented Candles</h3>
+                <p class="text-gray-600 mt-2">Scented candles are perfect for relaxation. Discover which scents work best...</p>
+                <a href="blog3.html">
+                    <button class="mt-4 px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Read More</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 New Vintage Luxury Candles. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

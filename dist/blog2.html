@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Benefits of Soy Candles</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body {
+                font-family: 'Georgia', serif;
+            }
+            .hero {
+                position: relative;
+                background-image: url('https://images.pexels.com/photos/6755758/pexels-photo-6755758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); /* High-quality image of soy candles */
+                background-size: cover;
+                background-position: center;
+                color: white;
+                height: 600px;
+            }
+            .hero-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4); /* Adjust opacity here */
+            }
+            .hero-content {
+                position: relative;
+                z-index: 2;
+            }
+        </style>
+    </head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">New Vintage Luxury Candles</a>
+            <ul class="flex space-x-6 text-gray-600">
+                <li><a href="index.html" class="hover:text-gray-900">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-900">About</a></li>
+                <li><a href="blog.html" class="hover:text-gray-900">Blog</a></li>
+                <li><a href="services.html" class="hover:text-gray-900">Services</a></li>
+                <li><a href="contact.html" class="hover:text-gray-900">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero h-[600px] flex items-center justify-center text-center overlay">
+        <div class="text-white p-6">
+            <h1 class="text-6xl font-bold">The Benefits of Soy Candles</h1>
+            <p class="text-xl mt-4">Why soy candles are better for you and the planet.</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <main class="container mx-auto py-12 px-4">
+        <article class="bg-white shadow-md rounded-lg p-6">
+            <p class="text-gray-700 leading-relaxed">
+                Soy candles are a natural and eco-friendly alternative to traditional paraffin candles. Made from soybean oil, they burn cleaner, producing less soot and harmful emissions.
+            </p>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                In addition to being environmentally friendly, soy candles burn longer due to their lower melting point. This means you enjoy their pleasant aromas for more hours compared to other candle types.
+            </p>
+            <blockquote class="mt-8 p-4 bg-gray-100 border-l-4 border-gray-500 italic text-gray-600">
+                "Choosing soy candles is a simple way to reduce your carbon footprint while indulging in luxury."
+            </blockquote>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                Soy candles are also an excellent carrier for fragrances, ensuring consistent and enjoyable scent throw. Whether you're unwinding after a long day or creating a cozy ambiance, soy candles are the perfect choice.
+            </p>
+        </article>
+
+        <!-- Interactive Comments Section -->
+        <section class="mt-12">
+            <h2 class="text-2xl font-bold mb-4">Share Your Thoughts</h2>
+            <form class="bg-white shadow-md rounded-lg p-6">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                    <input type="text" id="name" class="w-full border border-gray-300 rounded-md p-2" placeholder="Enter your name">
+                </div>
+                <div class="mb-4">
+                    <label for="comment" class="block text-gray-700 font-bold mb-2">Comment:</label>
+                    <textarea id="comment" class="w-full border border-gray-300 rounded-md p-2" rows="4" placeholder="Write your comment here"></textarea>
+                </div>
+                <button type="submit" class="px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Submit</button>
+            </form>
+        </section>
+
+        <!-- Related Posts -->
+        <section class="mt-12">
+            <h2 class="text-2xl font-bold mb-4">Explore More</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Related Post 1" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="text-lg font-bold mt-4">How to Choose the Right Candle for Your Home</h3>
+                    <a href="blog1.html" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 inline-block">Read More</a>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Related Post 2" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="text-lg font-bold mt-4">Relaxing with Scented Candles</h3>
+                    <a href="blog3.html" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 inline-block">Read More</a>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="https://via.placeholder.com/400x200" alt="Related Post 3" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="text-lg font-bold mt-4">Decorating Your Space with Candles</h3>
+                    <a href="blog6.html" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 inline-block">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 New Vintage Luxury Candles. All rights reserved.</p>
+        </div>
+    </footer
+::contentReference[oaicite:0]{index=0}
+ 
