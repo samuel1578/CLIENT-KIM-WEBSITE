@@ -11,106 +11,154 @@
         }
     </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-white">
 
-    <!-- Navbar -->
-    <nav class="bg-blue-600 text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
+    <!-- Sidebar -->
+    <div class="w-64 h-full bg-gray-800 text-white flex flex-col">
+        <div class="flex items-center justify-center h-20 bg-gray-900">
             <a href="#" class="text-2xl font-bold">Client Kim</a>
-            <ul class="hidden md:flex space-x-4">
-                <li><a href="index.html" class="hover:underline">Home</a></li>
-                <li><a href="about.html" class="hover:underline">About</a></li>
-                <li><a href="blog.html" class="hover:underline">Blog</a></li>
-                <li><a href="products.html" class="hover:underline">Products</a></li>
-                <li><a href="admin.html" class="hover:underline">Admin</a></li>
-            </ul>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="relative bg-cover bg-center h-80" style="background-image: url('hero-image.jpg');">
-        <div class="bg-black bg-opacity-50 text-white h-full flex justify-center items-center">
-            <h1 class="text-4xl font-bold">Welcome to the Admin Dashboard</h1>
-        </div>
-    </section>
-
-    <!-- Content Section -->
-    <div class="container mx-auto mt-10">
-        <h2 class="text-3xl font-bold mb-6">Manage Your Site</h2>
-
-        <!-- Product Management Section -->
-        <div class="bg-white p-6 rounded shadow mb-8">
-            <h3 class="text-2xl font-bold mb-4">Product Management</h3>
-            <form class="space-y-4">
-                <div>
-                    <label for="productName" class="block text-lg font-medium">Product Name</label>
-                    <input type="text" id="productName" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter product name">
-                </div>
-                <div>
-                    <label for="productPrice" class="block text-lg font-medium">Price</label>
-                    <input type="number" id="productPrice" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter price">
-                </div>
-                <div>
-                    <label for="productDescription" class="block text-lg font-medium">Description</label>
-                    <textarea id="productDescription" class="w-full p-2 border border-gray-300 rounded" rows="3" placeholder="Enter product description"></textarea>
-                </div>
-                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add Product</button>
-            </form>
-        </div>
-
-    <!-- Admin Product Add Form -->
-    <section class="container mx-auto py-12">
-        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Add New Product</h2>
-
-        <form action="/add-product" method="POST">
-            <div class="mb-4">
-                <label for="product-name" class="block text-gray-700">Product Name</label>
-                <input type="text" id="product-name" name="product-name" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md" required>
-            </div>
-            <div class="mb-4">
-                <label for="product-description" class="block text-gray-700">Product Description</label>
-                <textarea id="product-description" name="product-description" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md" rows="4" required></textarea>
-            </div>
-            <div class="mb-4">
-                <label for="product-price" class="block text-gray-700">Product Price ($)</label>
-                <input type="number" id="product-price" name="product-price" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md" required>
-            </div>
-            <div class="mb-4">
-                <label for="product-image" class="block text-gray-700">Product Image URL</label>
-                <input type="text" id="product
-
-        <!-- Promotions Section -->
-        <div class="bg-white p-6 rounded shadow mb-8">
-            <h3 class="text-2xl font-bold mb-4">Promotions</h3>
-            <form class="space-y-4">
-                <div>
-                    <label for="promotionName" class="block text-lg font-medium">Promotion Name</label>
-                    <input type="text" id="promotionName" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter promotion name">
-                </div>
-                <div>
-                    <label for="promotionDetails" class="block text-lg font-medium">Details</label>
-                    <textarea id="promotionDetails" class="w-full p-2 border border-gray-300 rounded" rows="3" placeholder="Enter promotion details"></textarea>
-                </div>
-                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Add Promotion</button>
-            </form>
-        </div>
-
-        <!-- Analytics Section -->
-        <div class="bg-white p-6 rounded shadow">
-            <h3 class="text-2xl font-bold mb-4">Website Analytics</h3>
-            <p class="text-lg">Track your website's performance:</p>
-            <ul class="list-disc pl-5 mt-3 space-y-2">
-                <li>Total Visitors: <span class="font-bold">1,245</span></li>
-                <li>Products Sold: <span class="font-bold">567</span></li>
-                <li>Active Promotions: <span class="font-bold">3</span></li>
-            </ul>
-        </div>
+        <ul class="flex flex-col space-y-2 mt-6 px-4">
+            <li><a href="index.html" class="hover:bg-gray-700 px-4 py-2 rounded">Home</a></li>
+            <li><a href="about.html" class="hover:bg-gray-700 px-4 py-2 rounded">About</a></li>
+            <li><a href="blog.html" class="hover:bg-gray-700 px-4 py-2 rounded">Blog</a></li>
+            <li><a href="products.html" class="hover:bg-gray-700 px-4 py-2 rounded">Products</a></li>
+            <li><a href="admin.html" class="bg-gray-700 px-4 py-2 rounded">Admin</a></li>
+        </ul>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-blue-600 text-white text-center py-4 mt-10">
-        <p>&copy; 2025 New Vintage Luxury Candles. All rights reserved.</p>
-    </footer>
+    <!-- Main Content -->
+    <div class="flex-1 ml-64 bg-gray-100">
+        
+        <!-- Navbar -->
+        <nav class="bg-gray-800 text-white py-4">
+            <div class="container mx-auto flex justify-between items-center px-4">
+                <a href="#" class="text-2xl font-bold">Admin Dashboard</a>
+                <ul class="flex space-x-4">
+                    <li><a href="profile.html" class="hover:underline">Profile</a></li>
+                    <li><a href="logout.html" class="hover:underline">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
 
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center h-96" style="background-image: url('https://images.pexels.com/photos/15426084/pexels-photo-15426084/free-photo-of-candles-on-table-in-shop.jpeg?auto=compress&cs=tinysrgb&w=600');">
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+            <div class="text-center text-white relative z-10 py-24 px-4">
+                <h1 class="text-4xl font-bold">Welcome to the Admin Dashboard</h1>
+                <p class="text-xl mt-4">Manage your products, promotions, and website analytics from here.</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <div class="container mx-auto mt-10 px-4">
+
+            <!-- Section Header -->
+            <h2 class="text-3xl font-semibold text-gray-800 mb-8">Manage Your Site</h2>
+
+            <!-- Product Management Section -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Product Management</h3>
+                <form class="space-y-4">
+                    <div>
+                        <label for="productName" class="block text-lg font-medium text-gray-800">Product Name</label>
+                        <input type="text" id="productName" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter product name">
+                    </div>
+                    <div>
+                        <label for="productPrice" class="block text-lg font-medium text-gray-800">Price</label>
+                        <input type="number" id="productPrice" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter price">
+                    </div>
+                    <div>
+                        <label for="productDescription" class="block text-lg font-medium text-gray-800">Description</label>
+                        <textarea id="productDescription" class="w-full p-3 border border-gray-300 rounded-lg" rows="3" placeholder="Enter product description"></textarea>
+                    </div>
+                    <button type="submit" class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700">Add Product</button>
+                </form>
+            </div>
+
+            <!-- Promotions Section -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Promotions</h3>
+                <form class="space-y-4">
+                    <div>
+                        <label for="promotionName" class="block text-lg font-medium text-gray-800">Promotion Name</label>
+                        <input type="text" id="promotionName" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter promotion name">
+                    </div>
+                    <div>
+                        <label for="promotionDetails" class="block text-lg font-medium text-gray-800">Details</label>
+                        <textarea id="promotionDetails" class="w-full p-3 border border-gray-300 rounded-lg" rows="3" placeholder="Enter promotion details"></textarea>
+                    </div>
+                    <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700">Add Promotion</button>
+                </form>
+            </div>
+
+            <!-- Analytics Section -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Website Analytics</h3>
+                <p class="text-lg text-gray-800">Track your website's performance:</p>
+                <ul class="list-disc pl-5 mt-3 space-y-2 text-gray-800">
+                    <li>Total Visitors: <span class="font-bold">1,245</span></li>
+                    <li>Products Sold: <span class="font-bold">567</span></li>
+                    <li>Active Promotions: <span class="font-bold">3</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+            <p>&copy; 2025 New Vintage Luxury Candles. All rights reserved.</p>
+        </footer>
+
+    </div>
+    <script>
+        // Function to add a product
+        function addProduct() {
+            const productName = document.getElementById('productName').value;
+            const productPrice = document.getElementById('productPrice').value;
+            const productDescription = document.getElementById('productDescription').value;
+
+            if (productName && productPrice && productDescription) {
+                const productList = document.getElementById('productList');
+                const newProduct = document.createElement('div');
+                newProduct.classList.add('bg-gray-100', 'p-4', 'rounded-lg', 'shadow-sm');
+
+                newProduct.innerHTML = `
+                    <h4 class="font-semibold text-gray-800">${productName}</h4>
+                    <p class="text-gray-600">Price: $${productPrice}</p>
+                    <p class="text-gray-600">${productDescription}</p>
+                `;
+                productList.appendChild(newProduct);
+
+                // Clear form after adding the product
+                document.getElementById('productForm').reset();
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+
+        // Function to add a promotion
+        function addPromotion() {
+            const promotionName = document.getElementById('promotionName').value;
+            const promotionDetails = document.getElementById('promotionDetails').value;
+
+            if (promotionName && promotionDetails) {
+                const promotionList = document.getElementById('promotionList');
+                const newPromotion = document.createElement('div');
+                newPromotion.classList.add('bg-gray-100', 'p-4', 'rounded-lg', 'shadow-sm');
+
+                newPromotion.innerHTML = `
+                    <h4 class="font-semibold text-gray-800">${promotionName}</h4>
+                    <p class="text-gray-600">${promotionDetails}</p>
+                `;
+                promotionList.appendChild(newPromotion);
+
+                // Clear form after adding the promotion
+                document.getElementById('promotionForm').reset();
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+    </script>
 </body>
 </html>
