@@ -82,7 +82,7 @@ Name: Agyenim-Boateng
     - GitHub: [@fafali-70](https://github.com/fafali70)
     - ![Fafali](assets/FAFALI.jpg)
 
-9. **[SENADZA BERNADINA]**
+9. **[SENADZA BERNARDINA]**
     - Role: Team Manager
     - GitHub: [@D-codes-it](https://github.com/d-codes-it)
     - ![Reynolds](assets/SENADZA.jpg)
@@ -100,7 +100,7 @@ Follow these steps to set up and run the application:
    cd CLIENT-KIM-WEBSITE
 
 
-_Our amazing team worked together to bring this project to life!
+Our amazing team worked together to bring this project to life!
  
  STEP2
  Navigate to the Project Directory
