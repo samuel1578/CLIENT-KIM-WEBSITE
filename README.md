@@ -26,79 +26,20 @@ Here’s a group picture of our amazing team that worked together on this projec
 TEAM PHOTOS ARE IN THE ASSETS FOLDER
 
 
-1. **[Agyenim-Boateng Samuel Osei]**
-Name: Agyenim-Boateng
-   - Role: TESTER
-   - GitHub: [@samuel1578](https://github.com/samuel1578)
-   - ![Samuel](assets/SAMUEL.jpg)
 
-2. **[ Kimberly Elikem Hatsu]**
-    Name: Kimberly Elikem Hatsu 
-   - Role: BACKEND DEVELOPER
-   - GitHub: [@username2](https://github.com/KimmieX)
-   ![Kimberly](assets/KIMBERLY.jpg)
-   
+| **Team Member**                     | **Profile Picture**                          | **Role**            | **GitHub**                               |
+|-------------------------------------|---------------------------------------------|---------------------|------------------------------------------|
+| *Kimberly Elikem Hatsu*             | ![Kimberly Elikem Hatsu](assets/KIMBERLY.jpg) | Backend Developer   | [@KimmieX](https://github.com/KimmieX)   |
+| *Melody Amppiah Ama Yorke*          | ![Melody Amppiah Ama Yorke](assets/MELODY.jpg) | Quality Assurance   | [@melodyyorke](https://github.com/melodyyorke) |
+| *Abdul Razak Abubakar*              | ![Abdul Razak Abubakar](assets/RAZAK.jpg)     | UI/UX Developer     | [@RazakGit](https://github.com/razakGit)  |
+| *Bestina Buronya*                   | ![Bestina Buronya](assets/BESTINA.jpg)       | Content Creator     | [@bestinaa](https://github.com/bestinaa) |
+| *Samuel Osei Agyenim-Boateng*       | ![Samuel Osei Agyenim-Boateng](assets/SAMUEL.jpg) | Tester             | [@samuel1578](https://github.com/samuel1578) |
+| *Bernardina Senadza*                | ![Bernardina Senadza](assets/SENADZA.jpg)    | Team Manager        | [@D-Codes-It](https://github.com/D-Codes-It) |
+| *Fafali Vordey*                     | ![Fafali Vordey](assets/FAFALI.jpg)          | Product Manager     | [@fafali70](https://github.com/fafali70) |
+| *Reynolds Malba*                    | ![Reynolds Malba](assets/REYNOLDS.jpg)       | Marketing Specialist | [@rey202](https://github.com/rey202)     |
+| *Ransford Opoku Kyeremanteng*       | ![Ransford Opoku Kyeremanteng](assets/RANSFORD.jpg) | Quality Assurance   | [@ransford13](https://github.com/ransford13) |
+| *Nii Akwei*                         | ![Nii Akwei](assets/NII.jpg)                 | Backend Developer   | [@akweinii](https://github.com/akweinii) |
 
-3. **[Abdul Razak Abubakar ]**
-    Name: Abdul Razak Abubakar 
-   - Role: UI/UX Designer
-   - GitHub: [@razak22084742](https://github.com/razak22084742)
-   -![Razak](assets/RAZAK.jpg)
-
-   
-
-4. **[Melody Amppiah Ama Yorke]**
--   Name: Melody Amppiah Ama Yorke
-   - Role: QUALITY ANALYST
-   - GitHub: [@melodyyorke](https://github.com/melodyyorke)
-   - ![Melody](assets/MELODY.jpg)
-
-
-5. **[Bestine Bronyah]**
--   Name: Bestine Bronyah
-   - Role: Content Creator
-   - GitHub: [@bestinaa](https://github.com/bestinaa)
-   -![Bestina](assets/BESTINA.jpg)
-
-
-6. **[Opoku Kyeremateng Ransford]**
--    Name: Opoku Kyeremateng Ransford
-   - Role: Database Administrator
-   - GitHub: [@ransford13](https://github.com/ransford13)
-   - ![Ransford](assets/RANSFORD.jpg)
-   
-
-
-7. **[MALBA REYNOLDS]**
-    Name: Malba Reynolds
-    - Role: Marketing Specialist
-    - GitHub: [@rey202](https://github.com/rey202)
-    - ![Reynolds](assets/REYNOLDS.jpg)
-
-
-8. **[FAFALI VORDEY]**
-    Name: Fafali Vordey
-    - Full Stack Developer
-    - GitHub: [@fafali-70](https://github.com/fafali70)
-    - ![Fafali](assets/FAFALI.jpg)
-
-9. **[SENADZA BERNARDINA]**
-    - Role: Team Manager
-    - GitHub: [@D-codes-it](https://github.com/d-codes-it)
-    - ![Reynolds](assets/SENADZA.jpg)
-
-| **Team Member**     | **Role**            | **GitHub**                               | **Email**                | **Profile Picture** |
-|---------------------|---------------------|------------------------------------------|--------------------------|----------------------|
-| ![Kimberly Elikem Hatsu](assets/ELIKEM.jpg) | Backend Developer   | [@KimmieX](https://github.com/KimmieX) | email1@example.com      | ![Member 1](assets/KIMBERLY.jpg.jpg) |
-| ![Melody Amppiah Ama Yorke ](assets/MELODY.jpg) | Quality Assurance    | [@melodyyorke](https://github.com/melodyyorke) | email2@example.com      | ![Member 2](assets/MELODY.jpg.jpg) |
-| ![Abdul Razak Abubakar](assets/RAZAK.jpg)      | UI/UX Developer  | [@RazakGit](https://github.com/razakGit)   | razak@example.com        | ![Razak](assets/RAZAK.jpg) |
-| ![Bestina Buronya](assets/BESTINA.jpg.jpg) | Content Creator      | [@bestinaa](https://github.com/bestinaa) | email4@example.com      | ![Member 4](assets/BESTINA.jpg.jpg) |
-| ![Samuel Osei Agyenim-Boateng](assets/SAMUEL.jpg) | Tester     | [@samuel1578](https://github.com/samuel1578) | email5@example.com      | ![Member 5](assets/SAMUEL.jpg.jpg) |
-| ![Bernardina Senadza](assets/SENADZA.jpg.jpg) | Team Manager   | [@D-Codes-It](https://github.com/D-Codes-It) | email6@example.com      | ![Member 6](assets/SENADZA.jpg.jpg) |
-| ![Fafali Vordey](assets/FAFALI.jpg.jpg) | Product Manager    | [@fafali70](https://github.com/fafali70) | email7@example.com      | ![Member 7](assets/FAFALI.jpgRE.jpg) |
-| ![Reynolds Malba](assets/REYNOLDS.jpg.jpg) | Marketing Specialist | [@rey202](https://github.com/rey202) | email8@example.com      | ![Member 8](assets/REYNOLDS.jpg.jpg) |
-| ![Ransford Opoku Kyeremanteng](assets/RANSFORD.jpg.jpg) | Quality Assurance    | [@ransford13](https://github.com/ransford13) | email9@example.com      | ![Member 9](assets/RANSFORD.jpg.jpg) |
-| ![Nii Akwei](assets/NII.jpg) | Backend Developer    | [@akweinii](https://github.com/akweinii) | email10@example.com      | ![Member 10](assets/NII.jpg.jpg) |
 ---
 
 ## 🚀 How to Run the Application
