@@ -28,13 +28,13 @@ TEAM PHOTOS ARE IN THE ASSETS FOLDER
 
 1. **[Agyenim-Boateng Samuel Osei]**
 Name: Agyenim-Boateng
-   - Role: Frontend Developer
+   - Role: TESTER
    - GitHub: [@samuel1578](https://github.com/samuel1578)
    - ![Samuel](assets/SAMUEL.jpg)
 
 2. **[ Kimberly Elikem Hatsu]**
     Name: Kimberly Elikem Hatsu 
-   - Role: Backend Developer
+   - Role: BACKEND DEVELOPER
    - GitHub: [@username2](https://github.com/KimmieX)
    ![Kimberly](assets/KIMBERLY.jpg)
    
@@ -49,7 +49,7 @@ Name: Agyenim-Boateng
 
 4. **[Melody Amppiah Ama Yorke]**
 -   Name: Melody Amppiah Ama Yorke
-   - Role: Quality Assurance
+   - Role: QUALITY ANALYST
    - GitHub: [@melodyyorke](https://github.com/melodyyorke)
    - ![Melody](assets/MELODY.jpg)
 
@@ -87,7 +87,18 @@ Name: Agyenim-Boateng
     - GitHub: [@D-codes-it](https://github.com/d-codes-it)
     - ![Reynolds](assets/SENADZA.jpg)
 
-
+| **Team Member**     | **Role**            | **GitHub**                               | **Email**                | **Profile Picture** |
+|---------------------|---------------------|------------------------------------------|--------------------------|----------------------|
+| ![Kimberly Elikem Hatsu](assets/ELIKEM.jpg) | Backend Developer   | [@KimmieX](https://github.com/KimmieX) | email1@example.com      | ![Member 1](assets/KIMBERLY.jpg.jpg) |
+| ![Melody Amppiah Ama Yorke ](assets/MELODY.jpg) | Quality Assurance    | [@melodyyorke](https://github.com/melodyyorke) | email2@example.com      | ![Member 2](assets/MELODY.jpg.jpg) |
+| ![Abdul Razak Abubakar](assets/RAZAK.jpg)      | UI/UX Developer  | [@RazakGit](https://github.com/razakGit)   | razak@example.com        | ![Razak](assets/RAZAK.jpg) |
+| ![Bestina Buronya](assets/BESTINA.jpg.jpg) | Content Creator      | [@bestinaa](https://github.com/bestinaa) | email4@example.com      | ![Member 4](assets/BESTINA.jpg.jpg) |
+| ![Samuel Osei Agyenim-Boateng](assets/SAMUEL.jpg) | Tester     | [@samuel1578](https://github.com/samuel1578) | email5@example.com      | ![Member 5](assets/SAMUEL.jpg.jpg) |
+| ![Bernardina Senadza](assets/SENADZA.jpg.jpg) | Team Manager   | [@D-Codes-It](https://github.com/D-Codes-It) | email6@example.com      | ![Member 6](assets/SENADZA.jpg.jpg) |
+| ![Fafali Vordey](assets/FAFALI.jpg.jpg) | Product Manager    | [@fafali70](https://github.com/fafali70) | email7@example.com      | ![Member 7](assets/FAFALI.jpgRE.jpg) |
+| ![Reynolds Malba](assets/REYNOLDS.jpg.jpg) | Marketing Specialist | [@rey202](https://github.com/rey202) | email8@example.com      | ![Member 8](assets/REYNOLDS.jpg.jpg) |
+| ![Ransford Opoku Kyeremanteng](assets/RANSFORD.jpg.jpg) | Quality Assurance    | [@ransford13](https://github.com/ransford13) | email9@example.com      | ![Member 9](assets/RANSFORD.jpg.jpg) |
+| ![Nii Akwei](assets/NII.jpg) | Backend Developer    | [@akweinii](https://github.com/akweinii) | email10@example.com      | ![Member 10](assets/NII.jpg.jpg) |
 ---
 
 ## 🚀 How to Run the Application
