@@ -32,58 +32,56 @@ Name: Agyenim-Boateng
    - GitHub: [@samuel1578](https://github.com/samuel1578)
    - ![Samuel](assets/SAMUEL.jpg)
 
-2. **[Member 2 Name]**
+2. **[ Kimberly Elikem Hiatsu]**
     Name: Kimberly Elikem Hiatsu 
    - Role: Backend Developer
    - GitHub: [@username2](https://github.com/username2)
+   ![Kimberly](assets/KIMBERLY.jpg)
    
 
-3. 
+3. **[Abdul Razak Abubakar ]**
     Name: Abdul Razak Abubakar 
    - Role: UI/UX Designer
    - GitHub: [@razak22084742](https://github.com/razak22084742)
    -![Razak](assets/RAZAK.jpg)
 
-4. **[Member 4 Name]**
-   - Role: Project Manager
-   - GitHub: [@username4](https://github.com/username4)
    
 
-5. **[Member 5 Name]**
+4. **[Melody Amppiah Ama Yorke]**
 -   Name: Melody Amppiah Ama Yorke
    - Role: Quality Assurance
    - GitHub: [@melodyyorke](https://github.com/melodyyorke)
    - ![Melody](assets/MELODY.jpg)
 
-6. **[Member 6 Name]**
-   - Role: DevOps Engineer
-   - GitHub: [@username6](https://github.com/username6)
-   -
 
-7. **[Member 7 Name]**
+5. **[Bestine Bronyah]**
 -   Name: Bestine Bronyah
    - Role: Content Creator
    - GitHub: [@bestinaa](https://github.com/bestinaa)
    -![Bestina](assets/BESTINA.jpg)
 
 
-8. **[Member 8 Name]**
+6. **[Opoku Kyeremateng Ransford]**
 -    Name: Opoku Kyeremateng Ransford
    - Role: Database Administrator
    - GitHub: [@ransford13](https://github.com/ransford13)
    - ![Ransford](assets/RANSFORD.jpg)
    
 
-9. **[Member 9 Name]**
-   - Role: Full-Stack Developer
-   - GitHub: [@username9](https://github.com/username9)
-   - Email: email9@example.com
 
-10. **[Member 10 Name]**
+7. **[MALBA REYNOLDS]**
     Name: Malba Reynolds
     - Role: Marketing Specialist
     - GitHub: [@rey202](https://github.com/rey202)
     - ![Reynolds](assets/REYNOLDS.jpg)
+
+
+7. **[FAFALI]**
+    Name: Fafali
+    - Full Stack Developer
+    - GitHub: [@rey202](https://github.com/rey202)
+    - ![Reynolds](assets/FAFALI.jpg)
+
 
 ---
 
