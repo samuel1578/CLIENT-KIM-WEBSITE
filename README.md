@@ -1,4 +1,4 @@
-# Client Kim Website
+# DCIT 209 E-COMMERCE PROJECT
 
 Welcome to the GROUP 16 E-COMMERCE PROJECT repository! This project showcases our collaborative efforts to design and develop a modern and elegant websitee-commerce website selling luxury candles and bag. Dive in to explore the details of our work and get started with running the application.
 
@@ -32,10 +32,10 @@ Name: Agyenim-Boateng
    - GitHub: [@samuel1578](https://github.com/samuel1578)
    - ![Samuel](assets/SAMUEL.jpg)
 
-2. **[ Kimberly Elikem Hiatsu]**
-    Name: Kimberly Elikem Hiatsu 
+2. **[ Kimberly Elikem Hatsu]**
+    Name: Kimberly Elikem Hatsu 
    - Role: Backend Developer
-   - GitHub: [@username2](https://github.com/username2)
+   - GitHub: [@username2](https://github.com/KimmieX)
    ![Kimberly](assets/KIMBERLY.jpg)
    
 
@@ -76,11 +76,16 @@ Name: Agyenim-Boateng
     - ![Reynolds](assets/REYNOLDS.jpg)
 
 
-7. **[FAFALI]**
-    Name: Fafali
+8. **[FAFALI VORDEY]**
+    Name: Fafali Vordey
     - Full Stack Developer
-    - GitHub: [@rey202](https://github.com/rey202)
-    - ![Reynolds](assets/FAFALI.jpg)
+    - GitHub: [@fafali-70](https://github.com/fafali70)
+    - ![Fafali](assets/FAFALI.jpg)
+
+9. **[SENADZA BERNADINA]**
+    - Role: Team Manager
+    - GitHub: [@D-codes-it](https://github.com/d-codes-it)
+    - ![Reynolds](assets/SENADZA.jpg)
 
 
 ---
