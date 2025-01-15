@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Vintage Luxury Candles - All Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-image: url('https://via.placeholder.com/1500x1000'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-section {
+            background-image: url('https://via.placeholder.com/1600x800'); /* Replace with hero image */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+        .smooth-scroll {
+            transition: all 0.5s ease-in-out;
+        }
+        .smooth-scroll:hover {
+            transform: translateY(-5px);
+        }
+        #cart-popup {
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+    transition: background-color 0.3s;
+}
+
+#cart-popup:hover {
+    background-color: #4a4a4a;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">New Vintage Luxury Candles</a>
+            <ul class="flex space-x-6 text-gray-600">
+                <li><a href="index.html" class="hover:text-gray-900">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-900">About</a></li>
+                <li><a href="catalog.html" class="hover:text-gray-900">Catalog</a></li>
+                <li><a href="contact.html" class="hover:text-gray-900">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Hero Section -->
+<section class="hero-section flex items-center justify-center text-center text-white bg-black bg-opacity-50" style="background-image: url('https://images.pexels.com/photos/815580/pexels-photo-815580.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+    <div>
+        <h1 class="text-5xl font-semibold">Discover Our Exclusive Collection</h1>
+        <p class="text-xl mt-4">Illuminate your world with our luxurious candles and accessories</p>
+
+    </div>
+</section>
+
+
+    <!-- Candles Section -->
+    <section id="candles" class="container mx-auto py-12">
+        <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">Our Candle Collection</h2>
+
+        <!-- Grid Container for Candles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-8">
+
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/85D17BB0-B0B8-400F-A97D-D00B54AACE95.heic?v=1732756521&width=360" alt="Product 1" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">LV Logo Scented Candles</h3>
+                    <p class="text-gray-600 mt-2">A soothing lavender-scented candle that calms your senses and brightens your space.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$25.00</p>
+                   <!-- Product Card 1 -->
+<button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="1" 
+data-name="LV Logo Scented Candles" 
+data-price="25.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_6995.jpg?v=1733103505&width=360" alt="Product 2" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">LV Purse Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <!-- Product Card 1 -->
+<button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="2" 
+data-name="LV Logo Purse  Candles" 
+data-price="25.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 3 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_9175.jpg?v=1732763379&width=360" alt="Product 3" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Prada Logo Scented Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <!-- Product Card 1 -->
+<button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="3" 
+data-name="Prada Logo Scented Candle" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 4 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/5975A46A-526D-4622-8318-BBA55B0C1DE1.heic?v=1732762821&width=360" alt="Product 4" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Medium C C Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+<button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="4" 
+data-name="Medium C C Candle" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 5-->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_5845.heic?v=1732764708&width=360" alt="Product 5" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Woman Body Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="5" 
+data-name="Woman Body Candle " 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 6 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/51176411-C220-4479-896E-DC938D8E0800.jpg?v=1732764085&width=360" alt="Product 6" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Round L V Bag Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="6" 
+data-name="Round L V Bag Candle" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 7-->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/B6D2D3FE-8794-48F3-8F23-5D0C3E6EDBC6.heic?v=1721238441&width=360" alt="Product 7" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">L V Duffel Bag Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="7" 
+data-name="L V Duffel Bag Candle" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 8 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/C88B4B66-9A0E-426D-9A1E-D83D634F3F45.heic?v=1732757088&width=360" alt="Product 8" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">YSL Handbag Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="8" 
+data-name="YSL Handbag Candle" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 9 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/0D4C8876-B881-4C99-8EC3-8B8BB2149288.png?v=1732757771&width=360" alt="Product 9" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Hugging Bears Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 10 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_9501.jpg?v=1732706361&width=360" alt="Product 10" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Coco Purfume Bottle Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="10" 
+data-name="Coco Purfume Bottle Candle" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 11 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_1134_25ec0c49-ffb4-4bb8-bec7-a742bea87c3d.jpg?v=1732706804&width=360" alt="Product 11" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Daisy Flower Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+                    data-id="11" 
+                    data-name="Daisy Flower Candle" 
+                    data-price="28.00" 
+                    onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 12 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG-0101.heic?v=1732707153&width=360" alt="Product 12" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Floral Teddy Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="12" 
+data-name="Floral Teddy Candle" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 13 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/E4E0995E-F4F8-44B7-8D31-D705E109F34E.jpg?v=1730485231&width=360" alt="Product 13" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Face Jar Candle Set</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="14" 
+data-name="Face Jar Candle Set" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 14 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_1137.jpg?v=1732707892&width=360" alt="Product 14" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Gucci Logo Candle</h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="14" 
+data-name="Gucci Logo Candle" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+             <!-- Product Card 15 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/31D83E94-2D9A-4DB9-8A72-40634FB61A1F.jpg?v=1732756663&width=360" alt="Product 15" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">H Handbag Candle </h3>
+                    <p class="text-gray-600 mt-2">A warm vanilla fragrance that creates a cozy and inviting atmosphere in your home.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$28.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll" 
+data-id="15" 
+data-name="H Handlebag Candle" 
+data-price="28.00" 
+onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Repeat this for all 15 candle products -->
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section id="accessories" class="container mx-auto py-12">
+        <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">Luxury Accessories</h2>
+
+        <!-- Grid Container for Candles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-8">
+
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_1162.jpg?v=1726554118&width=823" alt="Accessory 1" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Bouquet of Peonies</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/save_as_2024-06-17T03_09_01.425Z.png?v=1718593743" alt="Accessory 2" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Ceramic Face Vase</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+<!-- Product Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_0585.jpg?v=1718655944" alt="Accessory 3" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Ceramic Oval Tray</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 4-->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_4192.jpg?v=1732699021&width=360" alt="Accessory 4" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">CS Floral Scented Soap</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG-1529.jpg?v=1732706067&width=360" alt="Accessory 5" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">CC Purse with Chain Decorative Vase</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 6-->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/save_as_2024-06-29T02_52_04.451Z.png?v=1719629526" alt="Accessory 6" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Woman Half Body Vase</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 7-->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG-0541.heic?v=1732707314&width=360" alt="Accessory 7" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Flower Bouquet Candle</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 8 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/2E05789D-D630-4EFB-91EB-07A29BCB3EED.jpg?v=1731642159&width=360" alt="Accessory 8" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Ladies Bag Decorative Vase</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 9 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_9176.jpg?v=1732706534&width=360" alt="Accessory 9" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Dior Logo Scented Candle</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 10 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_0586.jpg?v=1719337662" alt="Accessory 10" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Circular Stacked Vase</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 11 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/IMG_0582.jpg?v=1716017357" alt="Accessory 11" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">"MR" Masculince Scented Candles</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 12 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="https://elysiancandlebar.com/cdn/shop/files/EAA468F1-D63C-4B65-AD9C-BD2B9E009309.jpg?v=1732699706&width=360" alt="Accessory 12" class="w-full h-72 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Face Sculpture Art Decor</h3>
+                    <p class="text-gray-600 mt-2">A sleek, golden candle holder that adds elegance to any room.</p>
+                    <p class="text-lg font-bold mt-4 text-gray-800">$45.00</p>
+                    <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700 smooth-scroll">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Repeat this for all 12 accessory products -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 New Vintage Luxury Candles. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper.js Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper for Candles Section
+        const swiperCandles = new Swiper('.swiper-container', {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 5,
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+<div id="cart-popup" class="fixed bottom-4 right-4 bg-gray-800 text-white px-4 py-3 rounded-lg shadow-lg flex items-center space-x-2 hover:bg-gray-700 cursor-pointer">
+    <span class="material-icons"></span>
+    <span>View Cart</span>
+</div>
+<script>
+    // Handle the click event for the cart popup
+    const cartPopup = document.getElementById('cart-popup');
+    cartPopup.addEventListener('click', () => {
+        window.location.href = 'cart.html';
+    });
+</script>
+
+</body>
+</html>s

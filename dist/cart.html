@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Luxury Candles</h1>
+            <nav class="space-x-4">
+                <a href="index.html" class="hover:text-gray-400">Home</a>
+                <a href="products.html" class="hover:text-gray-400">Products</a>
+                <a href="cart.html" class="text-gray-300">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-center text-white bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/815580/pexels-photo-815580.jpeg?auto=compress&cs=tinysrgb&w=600'); height: 300px;">
+        <div class="bg-black bg-opacity-50 p-6 rounded-md">
+            <h1 class="text-4xl font-semibold">Your Shopping Cart</h1>
+            <p class="text-lg mt-2">Review your items before proceeding to checkout.</p>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="container mx-auto my-10">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">Items in Your Cart</h2>
+            
+            <!-- Cart Items Table -->
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="px-4 py-2">Item</th>
+                            <th class="px-4 py-2">Price</th>
+                            <th class="px-4 py-2">Quantity</th>
+                            <th class="px-4 py-2">Total</th>
+                            <th class="px-4 py-2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- JavaScript will populate this section -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="flex justify-between items-center mt-6">
+                <div class="text-lg font-semibold">
+                    <p id="subtotal">Subtotal: $0.00</p>
+                    <p id="tax">Tax (10%): $0.00</p>
+                    <p id="total">Total: $0.00</p>
+                </div>
+                <a href="https://payment-provider.example.com" target="_blank" class="px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">
+                    Proceed to Checkout
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 Luxury Candles. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Utility function to format currency
+        const formatCurrency = (value) => `$${value.toFixed(2)}`;
+
+        // Fetch cart data from Local Storage
+        const getCartData = () => JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Save cart data to Local Storage
+        const saveCartData = (data) => localStorage.setItem('cart', JSON.stringify(data));
+
+        // Render the cart items and summary
+        const renderCart = () => {
+            const cartData = getCartData();
+            const cartItems = document.getElementById('cart-items');
+            const subtotalElem = document.getElementById('subtotal');
+            const taxElem = document.getElementById('tax');
+            const totalElem = document.getElementById('total');
+
+            cartItems.innerHTML = ''; // Clear current cart items
+            let subtotal = 0;
+
+            cartData.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+
+                const row = `
+                    <tr>
+                        <td class="border px-4 py-2">${item.name}</td>
+                        <td class="border px-4 py-2">${formatCurrency(item.price)}</td>
+                        <td class="border px-4 py-2">${item.quantity}</td>
+                        <td class="border px-4 py-2">${formatCurrency(itemTotal)}</td>
+                        <td class="border px-4 py-2">
+                            <button onclick="removeItem(${index})" class="text-red-500 hover:underline">Remove</button>
+                        </td>
+                    </tr>
+                `;
+
+                cartItems.innerHTML += row;
+            });
+
+            const tax = subtotal * 0.10;
+            const total = subtotal + tax;
+
+            subtotalElem.textContent = `Subtotal: ${formatCurrency(subtotal)}`;
+            taxElem.textContent = `Tax (10%): ${formatCurrency(tax)}`;
+            totalElem.textContent = `Total: ${formatCurrency(total)}`;
+        };
+
+        // Remove item from the cart
+        const removeItem = (index) => {
+            const cartData = getCartData();
+            cartData.splice(index, 1);
+            saveCartData(cartData);
+            renderCart();
+        };
+
+        // Initialize the cart on page load
+        document.addEventListener('DOMContentLoaded', renderCart);
+    </script>
+</body>
+</html>
