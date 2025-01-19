@@ -29,7 +29,7 @@ TEAM PHOTOS ARE IN THE ASSETS FOLDER
 
 | **Team Member**                     | **Profile Picture**                          | **Role**            | **GitHub**                               |
 |-------------------------------------|---------------------------------------------|---------------------|------------------------------------------|
-| *Kimberly Elikem Hatsu*             | ![Kimberly Elikem Hatsu](assets/KIMBERLY.jpg) | Backend Developer   | [@KimmieX](https://github.com/KimmieX)   |
+| *Kimberly Elikem Hatsu*             | ![Kimberly Elikem Hatsu](assets/KIMBERLY.jpg) | Frontend Developer   | [@KimmieX](https://github.com/KimmieX)   |
 | *Melody Amppiah Ama Yorke*          | ![Melody Amppiah Ama Yorke](assets/MELODY.jpg) | Quality Assurance   | [@melodyyorke](https://github.com/melodyyorke) |
 | *Abdul Razak Abubakar*              | ![Abdul Razak Abubakar](assets/RAZAK.jpg)     | UI/UX Developer     | [@RazakGit](https://github.com/razakGit)  |
 | *Bestina Buronya*                   | ![Bestina Buronya](assets/BESTINA.jpg)       | Content Creator     | [@bestinaa](https://github.com/bestinaa) |
