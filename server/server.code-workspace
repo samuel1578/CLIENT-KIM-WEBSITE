@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "server",
+			"path": "."
+		},
+		{
+			"name": "CLIENT-KIM-WEBSITE",
+			"path": "../../../../OneDrive/Documents/GitHub/CLIENT-KIM-WEBSITE"
+		},
+		{
+			"name": "client",
+			"path": "../client"
+		}
+	],
+	"settings": {}
+}
